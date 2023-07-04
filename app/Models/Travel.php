@@ -20,7 +20,7 @@ class Travel extends Model
         'slug',
         'name',
         'description',
-        'number_of_days'
+        'number_of_days',
     ];
 
     public function tours(): HasMany
@@ -32,8 +32,8 @@ class Travel extends Model
     {
         return [
             'slug' => [
-                'source' => 'name'
-            ]
+                'source' => 'name',
+            ],
         ];
     }
 
